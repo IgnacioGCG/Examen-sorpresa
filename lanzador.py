@@ -40,6 +40,7 @@ def imprimir_puntos(A, B, C, D):
 def consultar_cuadrante(A, C, D):
         # Consultar y mostrar el cuadrante de los puntos
         print("El punto A pertenece al:", A.cuadrante())
+        print("El punto B pertenece al:", B.cuadrante())
         print("El punto C pertenece al:", C.cuadrante())
         print("El punto D pertenece al:", D.cuadrante())
 
@@ -72,3 +73,12 @@ def crear_rectangulo(A, B):
         print("Altura del rectángulo:", rectangulo.calcular_altura())
         print("Área del rectángulo:", rectangulo.calcular_area(rectangulo.calcular_base(), rectangulo.calcular_altura()))
         print("Perímetro del rectángulo:", rectangulo.calcular_perimetro())
+        
+if __name__ == "__main__":
+    A, B, C, D, O = crear_puntos()
+    imprimir_puntos(A, B, C, D)
+    consultar_cuadrante(A, C, D)
+    consultar_vectores(A, B)
+    consultar_distancias(A, B, C, O)
+    crear_rectangulo(A, B)
+    

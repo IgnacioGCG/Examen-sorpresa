@@ -1,5 +1,6 @@
-from lanzador import Lanzador  # Importa la función principal del módulo lanzador
-
+from lanzador import Lanzador
 class main:
     def __init__(self):
-        Lanzador()  # Llama al constructor de la clase Lanzador
+        Lanzador()
+if __name__ == "__main__":
+    main()
